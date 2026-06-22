@@ -3,7 +3,7 @@
   const placeholder = document.getElementById("navbar-placeholder");
   if (!placeholder) return;
 
-  fetch("/components/navbar.html")
+  fetch("components/navbar.html")
     .then((res) => res.text())
     .then((html) => {
       placeholder.innerHTML = html;
@@ -14,7 +14,7 @@
   // ── 1b. Fetch and inject footer ────────────────────────────
   const footerPlaceholder = document.getElementById("footer-placeholder");
   if (footerPlaceholder) {
-    fetch("/components/footer.html")
+    fetch("components/footer.html")
       .then((res) => res.text())
       .then((html) => {
         footerPlaceholder.innerHTML = html;
